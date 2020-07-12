@@ -11,8 +11,8 @@ class AssessmentSender:
         self.data = []
         self.filepath = os.path.dirname(os.path.abspath(__file__))
         """Whatsapp API init"""
-        account_sid = 'AC690f4022ae33c9e22e1b2daf11fb6b84'
-        auth_token = '4a5d557f842f0b68d9a42954c35db340'
+        account_sid = ''     # Twilio API ID
+        auth_token = ''      # Twilio API token
         self.client = Client(account_sid, auth_token)
         self.from_whatsapp_number='whatsapp:+14155238886'
         self.to_whatsapp_number='whatsapp:+573006756717'
